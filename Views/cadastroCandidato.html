@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <title>Urna Unilavras</title>
+        <meta charset="utf-8">
+
+        <script src="./scripts/jquery-3.6.0.js"></script>
+        <script src="./scripts/comunicandidato.js"></script>      
+
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+
+    </head>
+
+    <body>
+        <ul class="nav justify-content-end">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">HOME</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="listaCandidato.html">LISTA DE CANDIDATO</a>
+            </li>
+          </ul>
+
+        <div class="container">
+
+            <div class="row justify-content-center">
+                <div class="col-md-6">
+                    <h3>
+                        <center>Cadastro de Candidatos</center>
+                    </h3>
+
+                    <form name="formulario" autocomplete="off">
+
+                        <div class="form-group">
+                            <label for="idInput">ID</label>
+                            <input type="number" class="form-control" id="idInput" placeholder="Digite o ID do candidato">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="cpfInput">Número</label>
+                            <input type="number" class="form-control" id="numeroInput" placeholder="Digite seu Número de chapa">
+                        </div>
+
+
+                        <div class="form-group">
+                            <label for="nomeInput">Nome</label>
+                            <input type="text" class="form-control" id="nomeInput" placeholder="Digite o nome do candidato">
+                        </div>
+
+                        <div class="form-group">
+                            <label for="partidoInput">Partido</label>
+                            <input type="text" class="form-control" id="partidoInput" placeholder="Digite o nome do partido afiliado"> 
+                        </div>
+
+
+                        <button type="button" class="btn btn-primary" onclick="cadastrar()">Enviar</button>
+
+                    </form>
+                </div>
+
+                <hr>
+            </div>
+        </div>
+    </body>
+
+</html>
